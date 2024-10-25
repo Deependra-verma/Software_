@@ -1,8 +1,8 @@
-pip install transformers datasets torch   (terminal se phela install karligiye ga) 
+pip install transformers datasets torch   \\(terminal se phela install karligiye ga) 
 
 
 
-(yeh pura code hai )
+\\(yeh pura code hai )
 from transformers import GPT2LMHeadModel, GPT2Tokenizer, Trainer, TrainingArguments, DataCollatorForLanguageModeling
 import torch
 
@@ -62,7 +62,7 @@ fine_tune_model(tokenized_dataset, model, tokenizer, output_dir)
 
 
 
-(code test karna ke liye)
+\\(code test karna ke liye)
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
 model = GPT2LMHeadModel.from_pretrained('./education_chatbot')
@@ -79,4 +79,5 @@ while True:
         print("Goodbye!")
         break
     response = generate_response(user_input, model, tokenizer)
-Agar without train karke chahiye tow aoko API use karna hoga chatgpt ya phir dusra models ka tow code thora easy ho jayega, isme apko apna database datas dalna hoga. Jitna jyada datas hoga utna jyada fine tune hoga 
+
+\\Agar without train karke chahiye tow aoko API use karna hoga chatgpt ya phir dusra models ka tow code thora easy ho jayega, isme apko apna database datas dalna hoga. Jitna jyada datas hoga utna jyada fine tune hoga 
